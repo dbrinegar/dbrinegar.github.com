@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# ref: https://help.github.com/articles/using-jekyll-with-pages/
+
+# update gibhub-pages ruby stuff unless we've been working on it recently
+recent=`find _site -mtime -3h`
+test -z "$recent" && bundle update
+
+# start localhost server, port 4000
+bundle exec jekyll serve
