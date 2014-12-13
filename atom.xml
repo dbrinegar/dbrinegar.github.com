@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>David Brinegar</title>
+ <link href="https://dbrinegar.github.io/atom.xml" rel="self"/>
+ <link href="http://dbrinegar.github.io/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://dbrinegar.github.io/</id>
+ <author>
+   <name>David Brinegar</name>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{ site.url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
+
