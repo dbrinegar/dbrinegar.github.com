@@ -2,9 +2,24 @@
 
 # ref: https://help.github.com/articles/using-jekyll-with-pages/
 
+if [ ! -f Gemfile ]
+then
+  cat <<EOF > Gemfile
+source 'https://rubygems.org'
+gem 'github-pages'
+EOF
+  bundle install
+fi
+
+
 # update gibhub-pages ruby stuff unless we've been working on it recently
 recent=`find _site -mtime -3h`
-test -z "$recent" && bundle update
+if [ -z "$recent" ]
+then
+  mkdir -p _site
+  bundle update
+fi
 
 # start localhost server, port 4000
+(sleep 2 ; open http://localhost:4000) &
 bundle exec jekyll serve
