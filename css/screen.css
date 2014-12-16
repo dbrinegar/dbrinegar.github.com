@@ -1,81 +1,13 @@
 /*****************************************************************************/
 /*
-/* Common
-/*
-/*****************************************************************************/
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-html, body {
-	height: 100%;
-}
-
-body {
-	background-color: white;
-	font: 13.34px helvetica, arial, clean, sans-serif;
-	*font-size: small;
-	text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-size: 100%;
-	margin-top: 1em;
-}
-
-h1 {
-	font-size: 110%;
-	margin-bottom: 1em;
-}
-
-p {
-	margin: 1em 0;
-}
-
-a {
-	color: #00a;
-}
-
-a:hover {
-	color: black;
-}
-
-a:visited {
-	color: #a0a;
-}
-
-table {
-	font-size: inherit;
-	font: 100%;
-}
-
-blockquote {
-	margin-left:1em;
-}
-
-::selection {
-    color: white;
-    background-color: #369;
-}
-
-/*****************************************************************************/
-/*
 /* Site
 /*
 /*****************************************************************************/
 
 .site {
-	font-size: 110%;
 	text-align: justify;
-	width: 728px;
 	margin: 3em auto 2em auto;
 	line-height: 1.5em;
-}
-
-h1, h2, h3, h4, h5, h6, .comments {
-	text-align: left;
 }
 
 .title {
