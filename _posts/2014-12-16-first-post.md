@@ -16,4 +16,5 @@ This is the first post in this set, and more of a css example.
 
 And finally we want `code` fragments from gists
 
-{% gist 6095828 system.log %}
+<script src="https://gist.github.com/dbrinegar/6095828.js"></script>
+
