@@ -1,3 +1,6 @@
-Sitemap: http://dbrinegar.github.io/sitemap.xml
+---
+layout: nil
+---
+Sitemap: {{ site.url}}/sitemap.xml
 User-agent: *
 Allow: /
