@@ -1,4 +1,9 @@
-url: http://dbrinegar.github.io
-permalink: pretty
+# generic
+permalink: 'pretty'
 highlighter: true
 exclude: ['Gemfile', 'Gemfile.lock', 'start-server']
+
+# custom
+url: 'http://dbrinegar.github.io'
+google_analytics_account: 'UA-57632919-1'
+disqus_account: 'dbrinegar'
