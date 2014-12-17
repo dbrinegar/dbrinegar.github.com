@@ -1,7 +1,7 @@
 # generic
 permalink: 'pretty'
 highlighter: true
-exclude: ['Gemfile', 'Gemfile.lock', 'start-server']
+exclude: ['Gemfile', 'Gemfile.lock', 'start-server', 'README.md']
 
 # custom
 author: 'David Brinegar'
