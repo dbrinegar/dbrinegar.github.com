@@ -1,0 +1,11 @@
+<!--
+ ref: https://dev.twitter.com/web/embedded-timelines
+-->
+{% if site.twitter_account and site.twitter_widget_id %}
+<a class="twitter-timeline"
+  href="https://twitter.com/{{ site.twitter_account }}"
+  data-widget-id="{{ site.twitter_widget_id }}"
+  data-chrome="nofooter"
+  >Tweets by @{{ site.twitter_account }}</a>
+<script src="//platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+{% endif %}

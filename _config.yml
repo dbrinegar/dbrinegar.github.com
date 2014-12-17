@@ -7,3 +7,5 @@ exclude: ['Gemfile', 'Gemfile.lock', 'start-server']
 url: 'http://dbrinegar.github.io'
 google_analytics_account: 'UA-57632919-1'
 disqus_account: 'dbrinegar'
+twitter_account: 'davidbrinegar'
+twitter_widget_id: '287276808276152320'
