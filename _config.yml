@@ -1,3 +1,4 @@
+url: http://dbrinegar.github.io
 permalink: pretty
 highlighter: true
 exclude: ['Gemfile', 'Gemfile.lock', 'start-server']
