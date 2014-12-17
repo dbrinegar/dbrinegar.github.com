@@ -4,7 +4,9 @@ highlighter: true
 exclude: ['Gemfile', 'Gemfile.lock', 'start-server']
 
 # custom
-url: 'http://dbrinegar.github.io'
+author: 'David Brinegar'
+email:
+url: 'https://dbrinegar.github.io'
 google_analytics_account: 'UA-57632919-1'
 disqus_account: 'dbrinegar'
 twitter_account: 'davidbrinegar'
