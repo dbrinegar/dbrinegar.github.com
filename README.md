@@ -15,7 +15,7 @@ https://pages.github.com/
 If you want a quick-n-dirty blog for similar reasons you should be able to
 follow these steps:
 
-* clone this repo in github, call your repo `"youraccount".github.io` to
+* fork this repo in github, call your repo `"youraccount".github.io` to
 trigger the GitHub Pages workflow
 * clone your new repo to your dev environment
 * edit `_config.yml`  so you aren't using my accounts
@@ -23,6 +23,6 @@ trigger the GitHub Pages workflow
 * `./start-server` to install tools, build the site, start a local server, open
 a browser window to see the blog
 * `git add --all`
-* `git commit -m "blog fork"`
-* `git push`
+* `git commit -m "blog fork"`  to save your work locally
+* `git push`  to go live
 
