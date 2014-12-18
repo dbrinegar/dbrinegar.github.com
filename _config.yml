@@ -3,10 +3,12 @@ permalink: 'pretty'
 highlighter: true
 exclude: ['Gemfile', 'Gemfile.lock', 'start-server', 'README.md']
 
-# custom
+# custom, required
 author: 'David Brinegar'
-email:
 url: 'https://dbrinegar.github.io'
+
+# custom, optional
+email:
 google_analytics_account: 'UA-57632919-1'
 github_account: 'dbrinegar'
 disqus_account: 'dbrinegar'
