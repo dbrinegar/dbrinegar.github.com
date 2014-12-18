@@ -4,7 +4,12 @@
 /*
 /*****************************************************************************/
 
-.site {
+body {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#site {
 	text-align: justify;
 	margin: 3em auto 2em auto;
 	line-height: 1.5em;
@@ -16,20 +21,20 @@
 	margin-bottom: 2em;
 }
 
-.site .title a {
+#site .title a {
 	color: #369;
 	text-decoration: none;
 }
 
-.site .title a:hover {
+#site .title a:hover {
 	color: black;
 }
 
-.site .meta {
+#site .meta {
 	color: #aaa;
 }
 
-.site .footer {
+#site .footer {
 	font-size: 80%;
 	color: #666;
 	border-top: 4px solid #eee;
@@ -37,17 +42,17 @@
 	overflow: hidden;
 }
 
-.site .footer .contact {
+#site .footer .contact {
 	float: left;
 	margin-right: 3em;
 }
 
-.site .footer .contact a,
+#site .footer .contact a,
 .site .footer .rss a {
 	color: #8085C1;
 }
 
-.site .footer .rss {
+#site .footer .rss {
 	margin-top: 1.1em;
 	margin-right: 0em;
 	float: right;
