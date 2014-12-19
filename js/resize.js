@@ -22,9 +22,9 @@
   }
 
   var currentLayout,
-      L = 'large',
-      M = 'medium',
-      S = 'small',
+      L = 54, // >1 + 33em + >1 + 18em + 1
+      M = 35, // >1 + 33em + >1
+      S = 3,  // 1 + <33em + 1
       body = document.body,
       site = getEl('site'),
       sidebar = getEl('sidebar'),
@@ -36,19 +36,19 @@
             document.documentElement.clientWidth || document.body.clientWidth,
         empx = em.clientWidth || 16;
     w = w / empx;
-    if (w >= 52 && currentLayout != L) {
+    if (w >= L && currentLayout != L) {
       body.style['margin-right'] = '18em';
       site.style['width'] = '33em';
       sidebar.style['display'] = 'block';
       currentLayout = L;
     }
-    if (w >= 33 && w < 52 && currentLayout != M) {
+    if (w >= M && w < L && currentLayout != M) {
       body.style['margin-right'] = '1em';
       site.style['width'] = '33em';
       sidebar.style['display'] = 'none';
       currentLayout = M;
     }
-    if (w < 33 && currentLayout != S) {
+    if (w < M && currentLayout != S) {
       body.style['margin-right'] = '1em';
       site.style['width'] = '100%';
       sidebar.style['display'] = 'none';
