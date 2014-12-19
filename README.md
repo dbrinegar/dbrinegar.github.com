@@ -1,10 +1,11 @@
 ## about this repo
 
 This is my tech blog on https://dbrinegar.github.io with posts that are mostly
-notes to myself, but hey if useful to someone else then cool.
+notes to myself, hopefully useful to someone else too.
 
 Design goals are: simple, readable, works on mobile, reusable, and optionally
-integrates with Twitter, Github, Google Analytics, Disqus.
+integrates with Twitter, Github, Google Analytics, Disqus.  Uses a simple
+fluid layout based on width of browser, which you can see in `js/resize.js`.
 
 It uses the built-in Jekyll publishing system on Github, so a post is just a
 Markdown file and publishing is just `git push`.  You can read more about this
@@ -21,12 +22,6 @@ trigger the GitHub Pages workflow
 * `rm _posts/*` so you aren't publishing my posts
 * `./start-server` to install tools, build the site, start a local server, open
 a browser window to see the local version of the blog
-
-## publishing with git
-
-* `git add --all`
-* `git commit -m "blog fork"`  to save your work locally
-* `git push`  to go live on github.io
 
 ## _config.yml
 
@@ -49,3 +44,9 @@ twitter_widget_id:
 ```
 
 Please see the integration page code in `_includes/` for details on these.
+
+## publishing with git
+
+* `git add --all`
+* `git commit -m "blog fork"`  to save your work locally
+* `git push`  to go live on github.io
