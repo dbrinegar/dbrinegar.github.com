@@ -1,6 +1,6 @@
 # generic
 permalink: 'pretty'
-highlighter: true
+highlighter: 'pygments'
 exclude: ['Gemfile', 'Gemfile.lock', 'start-server', 'README.md']
 
 # custom, required
