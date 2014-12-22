@@ -102,7 +102,7 @@ ul.posts a {
 
 #post pre {
 	border: 1px solid #ddd;
-	background-color: #eef;
+	background-color: #f7f7f7;
 	padding: 0 .4em;
 	overflow-x: auto;
 }
@@ -114,7 +114,7 @@ ul.posts a {
 
 #post code {
 	border: 1px solid #ddd;
-	background-color: #eef;
+	background-color: #f7f7f7;
 	font-size: 85%;
 	padding: 0 .2em;
 }
