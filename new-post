@@ -1,0 +1,34 @@
+#!/bin/sh
+
+title="$@"
+
+while [ -z "$title" ]
+do
+  printf "enter a title: "
+  read title
+done
+
+alphadash=$( echo "${title}" |
+          sed -e "s/[^a-z0-9A-Z ]//g" \
+              -e "s/  */-/g"    \
+              -e "s/^-//"       \
+              -e "s/-$//" )
+
+file="_posts/$( date +%Y-%m-%d )-$alphadash.md"
+
+echo $file
+
+if [ ! -f $file ]
+then
+
+cat >$file << EOF
+---
+layout: post
+title: $title
+---
+
+EOF
+
+fi
+
+vim $file
