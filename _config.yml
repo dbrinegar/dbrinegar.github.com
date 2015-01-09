@@ -1,7 +1,7 @@
 # generic
 permalink: 'pretty'
 highlighter: 'pygments'
-exclude: ['Gemfile', 'Gemfile.lock', 'start-server', 'new-post', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'start-server', 'new-post', 'README.md', 'LICENSE']
 
 # custom, required
 author: 'David Brinegar'

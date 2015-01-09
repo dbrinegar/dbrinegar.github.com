@@ -23,6 +23,8 @@ trigger the GitHub Pages workflow
 * `./start-server` to install tools, build the site, start a local server, open
 a browser window to see the local version of the blog
 
+License: BSD
+
 ## _config.yml
 
 At miniumum, set author and url in the custom variables.  These show up in
