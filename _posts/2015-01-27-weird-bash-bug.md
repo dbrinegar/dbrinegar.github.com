@@ -17,7 +17,7 @@ where it can print things to the shell before commands are executed.
 
 ## the bug
 
-It appears to me that if the trap handler calls any external program, then pipes are blocked at 64k.  In the example above, echo is a bash built-in and seems to not cause this behavior.  So let's use the system /bin/echo
+It appears to me that if the trap handler calls any external program--even if there is no output--then pipes are blocked at 64k.  In the example above, echo is a bash built-in and seems to not cause this behavior.  So let's use the system /bin/echo to trigger the bug:
 
 {% highlight console %}
 $ trap '/bin/echo trap' debug
