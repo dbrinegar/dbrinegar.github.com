@@ -3,20 +3,18 @@ layout: post
 title: weird ncurses bug
 ---
 
-# ncurses breaks pipes
-
-I'm just going to leave this here in case someone else finds themselves in this rabbit hole.
+I'm just going to leave this here in case someone else finds themselves in this rabbit hole.  ncurses breaks pipes
 
 Do this on a Mac running the default Bash:
 
-```
+{% highlight console %}
 trap 'tput -V' debug
 jot -b '' 65537 | wc -l
-```
+{% endhighlight %}
 
 It hangs, yay a super weird bug! You have to hit Ctl-C and you'll see it got to 65536:
 
-```
+{% highlight console %}
 $ trap 'tput -V' DEBUG
 ncurses 5.7.20081102
 $ jot -b '' 65537 | wc -l
@@ -26,7 +24,7 @@ ncurses 5.7.20081102
    65536
 ncurses 5.7.20081102
 $ 
-```
+{% endhighlight %}
 
 You can replace `tput -V` with any ncurses program, like tic or toe, and they don't have to do anything but run and exit, as far as I can tell.  Any invocation of any ncurses program in the bash debug trap handler will cause pipes to stall at 64k.
 
