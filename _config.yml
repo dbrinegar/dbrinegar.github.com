@@ -1,6 +1,7 @@
 # generic
 permalink: 'pretty'
 highlighter: 'pygments'
+markdown: 'redcarpet' # render fenced code blocks correctly
 exclude: ['Gemfile', 'Gemfile.lock', 'start-server', 'new-post', 'README.md', 'LICENSE']
 
 # custom, required
