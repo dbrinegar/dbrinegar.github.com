@@ -100,27 +100,30 @@ ul.posts a {
 
   /* standard */
 
-#post pre {
-	border: 1px solid #ddd;
-	background-color: #f7f7f7;
-	padding: 0 .4em;
-	overflow-x: auto;
+/* <code> includes inline keywords, pre is the wrapper around blocks of syntax highlighted <code> */
+
+#post p code {
+  padding: 0px 0.2em;
+  font-size: 95%;
 }
+
+#post pre {
+  margin: 1em 0px;
+  padding: 0.8em;
+  font-size: 70%;
+  border-radius: 0.3em;
+  border: 1px solid #e5e5e5;
+}
+
+#post pre,
+#post p code {
+  background: #f7f7f7;
+}
+
 
 #post ul,
 #post ol {
 	margin-left: 1.35em;
-}
-
-#post code {
-	border: 1px solid #ddd;
-	background-color: #f7f7f7;
-	font-size: 85%;
-	padding: 0 .2em;
-}
-
-#post pre code {
-	border: none;
 }
 
   /* terminal */
